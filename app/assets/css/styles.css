@@ -1,0 +1,165 @@
+@font-face {
+	font-family: "Atami";
+	src: url(fonts/Atami-Regular.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Nunito;
+	background-color: #ECF0F1;
+	overflow-x: hidden;
+}
+
+
+
+.top-nav {
+	/*background-color: white;*/
+	/*position: fixed;*/
+	z-index: 5;
+}
+
+#header-form {
+	margin-top: 1%;
+}
+
+.header-login-input {
+	height: 1.9em;
+	font-size: 1em;
+	font-family: Nunito;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	background-color: transparent;
+}	
+
+.header-login-input:focus {
+	box-shadow: none;
+	border-bottom: 1px solid green;
+	transition: 1s;
+	background: transparent;
+}
+
+.header-login-input::placeholder {
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+.login-btn {
+	font-size: 0.9em;
+	margin-top: -1%;
+	border-radius: 10%;
+}
+
+.animate-btn {
+	position: relative;
+	z-index: 2;
+}
+
+.animate-btn:hover {
+	color: white;
+	transition: 250ms;
+}
+
+.animate-btn:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	background-color: #2C3E50;
+	transition: right 250ms;
+	z-index: -1;
+	border-radius: 10%;
+}
+
+.animate-btn:hover:before {
+	right: 0;
+}
+
+a {
+	font-family: Nunito;
+}
+
+h3,h2 {
+	font-family: Atami;
+}
+
+.left-panel {
+	background: url(../../../source/images/p1.png) no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 50vh;
+}
+
+
+.hero {
+	/*border: 1px solid red;*/
+	height: 90vh;
+	position: relative;
+	border-bottom: 1px solid grey;
+	/*background: url(../../../source/images/p1.png) no-repeat;
+	background-position: -200px 100px;
+	background-size: cover;*/
+}
+
+.hero-card-left {
+	width: 45%;
+	position: absolute;
+	left: 5%;
+	top: 10%;
+}
+
+.hero-card-right {
+	width: 45%;
+	height: 40%;
+	position: absolute;
+	left: 50%;
+	top: 10%;
+}
+
+.hero-card-right-2 {
+	width: 45%;
+	height: 46%;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	padding-top: 15%;
+	padding-left: 2%;
+	background-color: transparent;
+	border: none;
+}
+
+.card-text {
+	font-family: Nunito;
+	font-size: 0.9em;
+}
+
+.cta-btn {
+	padding: 4%;
+	background-color: #ccc;
+	color: black;
+	border-radius: 10%;
+}
+.featured {
+	/*border: 1px solid red;*/
+	padding: 3%;
+	position: relative;
+	width: 50%;
+	float: left;
+}
+
+.featured-one {
+	height: 100%;
+	margin-right: 5%;
+}
+
+.featured-one img {
+	position: relative;
+	display: inline-block;
+}
